@@ -1,7 +1,5 @@
 package com.company;
 
-
-
 public class Main {
 
     /*Try with resources-те колдоно ала турган Car деген класс тузунуз
@@ -11,14 +9,14 @@ main методдо try блоктун ичинде drive() деген мето�
 ал консольго "Машина журуп жатат" деп чыгаруусу керек
 
 Эскертуу: маселени чыгарууда try with resources колдонуу керек*/
+//
+    public static void main(String[] args) {
 
-    public static void main(String[] args)  {
-        // write your code here
 try( Car car = new Car()) {
-
     car.drive();
 }catch(Exception e ){
     e.getStackTrace();
 }
+
     }
 }
