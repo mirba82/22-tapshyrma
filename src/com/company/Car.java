@@ -1,10 +1,11 @@
 package com.company;
 
 public class Car implements AutoCloseable {
-    public Car(){
-
+    public Car() {
     }
-    public void close(){
+
+    @Override
+    public void close() {
         System.out.println("Car is closing");
     }
     public void drive(){
